@@ -1,0 +1,37 @@
+body {
+    background: green;
+}
+
+.card {
+    font-family: 'Delicious Handrawn', cursive;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    font-size: 100px;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 110px;
+    display: inline-block;
+
+}
+
+.card::before {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 50px;
+}
+
+.card::after{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 50px;
+    rotate: 180deg;
+}
+
+.spade:before, .spade:after{ content: "\2660";}
+.club:before, .club:after{ content: "\2663";}
+.heart:before, .heart:after{ content: "\2665"; color: red;}
+.diamond:before, .diamond:after{ content: "\2666"; color: red}
